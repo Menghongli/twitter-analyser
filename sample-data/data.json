@@ -1,0 +1,19 @@
+{
+	"is_thousand_separator_disabled":0,
+	"is_decimal_separator_comma":0,
+	"title":{
+		"text":"用户浏览器使用量分布"
+		},
+	"y_axis":{
+		"min":0,"steps":10,"max":200
+		},
+	"x_axis":{
+		"labels":{
+			"labels":[{"text":"Safari"},{"text":"MSIE6X"},{"text":"MSIE7X"},{"text":"MSIE8X"},{"text":"Firefox"},{"text":"Chrome"},{"text":"Opera"}
+,{"text":"Maxthon"},{"text":"Other"}]
+		}
+	},
+	"num_decimals":2,
+	"is_fixed_num_decimals_forced":0,
+	"elements":[{"font-size":10,"text":"使用者数量","type":"line","values":[6,2,63,168,1,10,1,0,0],
+	"colour":"#6666FF"}]}  

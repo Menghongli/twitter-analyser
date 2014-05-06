@@ -1,0 +1,178 @@
+
+/* -------------------- Resets --------------------- */
+body, form, fieldset, ol, ul, li, h1, h2, h3, h4, h5, h6, p {
+margin:0;
+padding:0;
+}
+img {
+border:0; /* kills Gecko bug when img's are placed inside links */
+vertical-align:bottom; /* set vertical align to bottom for IE */
+}
+/* ------------------- Defaults ------------------- */
+html {
+height:100%; 
+overflow:auto; /* triggers 100% height in Opera 9.5 */
+overflow-y:scroll; /* creates a horizontal scrollbar, for a more consistent look & feel */
+}
+body {
+height:100%; /* helps make height 100% */
+font:100%/1.5 Arial, Helvetica, sans-serif; /* font-size 100% prevents IE's resize bug */
+background:#FDFDFD;
+color:#333;
+}
+/* ------------------ Typography ------------------- */
+h1, h2, h3, h4, h5, h6, p {
+margin:0 0 1em;
+}
+p, ul, ol {
+font-size:1em;
+}
+ul {
+margin:0 0 1em 25px;
+list-style:none;
+}
+h1 {font-size:1.6em;}
+h2 {font-size:1.5em;}
+h3 {font-size:1.4em;}
+h4 {font-size:1.3em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1.1em;}
+/* -------------------- Forms ---------------------- */
+fieldset {
+border:none;
+}
+form :focus {
+outline:0; /* removes Safari's blue border */
+}  
+input, select, textarea {
+font-size:1em;
+font-family:Arial, Helvetica, sans-serif;
+}
+label {
+cursor:pointer;
+vertical-align:middle;
+}
+input {
+vertical-align:middle;
+}
+textarea { 
+overflow:auto; /* removes scrollbar from IE when none is needed */
+}	
+/* ------------------- Links ---------------------- */
+a {
+text-decoration:underline;
+color:#000;
+outline:0; /* removes dotted border in FX */
+}
+a:visited {
+color:#999;
+}
+a:hover, a:focus, a:active {
+visibility:visible; /* kills IE6 a:hover bug */
+text-decoration:underline;
+}
+/* ---------------- Global Classes --------------- */
+.clear {
+clear:both;
+line-height:0;
+height:0;
+font-size:0;
+}
+.box {
+	position: relative;
+	width: auto;
+	height: auto;
+	background: #fff;
+	border: solid 1px #d5d5d5;
+  margin-bottom:10px;
+	/*----- Drop shadow ----- */
+	-moz-box-shadow: 0px 0px 3px #d5d5d5;
+	-webkit-box-shadow: 0px 0px 3px #d5d5d5;
+	box-shadow: 0px 0px 3px #d5d5d5;
+	/*----- Border radius ----- */
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+} 
+.well{
+	background:#F5F5F5;
+	padding:20px;
+}    
+/* ------------------- Content ------------------- */
+.container{
+        position:absolute;
+	width:800px;
+	height:auto;
+	top:50px;
+        left:50%;
+        margin-left:-400px;
+        margin-bottom:40px;
+}
+.container .logo{
+	float:left;
+	width:auto;
+	height:auto;
+	margin-top:10px;
+}
+.container .nav{
+	float:left;
+	width:500px;
+	margin-left:10px;
+	margin-top:47px;
+}
+.container .nav li{
+	float:left;
+	width:auto;
+	padding:0 20px;
+}
+.container .nav li:first-child{
+	border-right:1px solid #ddd;
+}
+.content{
+	padding:20px;
+}
+#my_demo_chart{
+	float:left;
+	width:380px;
+	height:300px;
+}
+.content .intro{
+	float:left;
+	width:360px;
+	height:auto;
+	margin-top:0px;
+	padding-left:20px;
+	color:#666;
+}
+
+#wait {
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:-150px;
+        width:300px;
+        height:60px;
+        text-align:center;
+        z-index:5;
+        opacity:1;
+}
+.background{
+        display:none;
+        background:rgba(0,0,0,0.7);
+        width:100%;
+        height:100%;
+        top:0;
+        position:absolute;
+        z-index:1;
+}
+#ratio_chart1{
+        float:left;
+        margin-right:10px;
+}
+#ratio_chart2{
+        float:left;
+}
+#ratio_graph{
+        width:760px;
+        height:600px;
+}
